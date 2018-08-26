@@ -1,15 +1,19 @@
 <template>
     <div class="single-meal">
-        <p>{{ msg }}</p>
+        <select v-model="selectedRed">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <p>Green containers: {{ selectedRed }}</p>
     </div>
 </template>
 
 <script>
 export default {
-  name: "SingleMeal",
-  props: {
-      msg: String
-  }
+  name: "SingleMeal"
 };
 </script>
 
