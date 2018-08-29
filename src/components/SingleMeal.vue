@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .single-meal {
-        color: red;
-    }
+.single-meal {
+  color: red;
+}
 </style>
