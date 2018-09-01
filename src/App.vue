@@ -1,25 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <SingleMeal msg="TESTYTEST"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <SingleMealInput title="This is a Test Meal"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import SingleMeal from "./components/SingleMeal.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import SingleMealInput from "./components/SingleMealInput.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
-    SingleMeal
+    // HelloWorld,
+    SingleMealInput
   }
 };
 </script>
 
 <style lang="scss">
+$label-primary-color: #333;
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,5 +29,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: $label-primary-color;
 }
 </style>
