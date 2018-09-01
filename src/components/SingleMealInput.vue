@@ -11,49 +11,49 @@
           <ul class="container-listing">
             <li class="container-line">
               <span>Green Containers:</span>
-              <containerCount count=0 color="green"/>
+              <containerCount :count=this.containerCountGreen color="green"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Red Containers:</span>
-              <containerCount count=0 color="red"/>
+              <containerCount :count=this.containerCountRed color="red"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Yellow Containers:</span>
-              <containerCount count=0 color="yellow"/>
+              <containerCount :count=this.containerCountYellow color="yellow"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Purple Containers:</span>
-              <containerCount count=0 color="purple"/>
+              <containerCount :count=this.containerCountPurple color="purple"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Blue Containers:</span>
-              <containerCount count=0 color="blue"/>
+              <containerCount :count=this.containerCountBlue color="blue"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Orange Containers:</span>
-              <containerCount count=0 color="orange"/>
+              <containerCount :count=this.containerCountOrange color="orange"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Teaspoons:</span>
-              <containerCount count=0 color="grey"/>
+              <containerCount :count=this.containerCountTeaspoon color="grey"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
@@ -79,19 +79,31 @@ export default {
     },
     containerCountGreen: {
       type: Number,
-      default: 0
+      default: 11
     },
     containerCountRed: {
       type: Number,
-      default: 0
+      default: 12
     },
     containerCountYellow: {
       type: Number,
-      default: 0
+      default: 13
     },
     containerCountPurple: {
       type: Number,
-      default: 0
+      default: 14
+    },
+    containerCountBlue: {
+      type: Number,
+      default: 15
+    },
+    containerCountOrange: {
+      type: Number,
+      default: 16
+    },
+    containerCountTeaspoon: {
+      type: Number,
+      default: 17
     }
   }
 };

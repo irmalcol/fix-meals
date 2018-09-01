@@ -1,6 +1,6 @@
 <template>
     <div class="container-count">
-        <span :class=this.color>99</span>
+        <span :class=this.color>{{count}}</span>
     </div>
 </template>
 
