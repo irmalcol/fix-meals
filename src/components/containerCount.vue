@@ -1,6 +1,6 @@
 <template>
     <div class="container-count">
-        <span>99</span>
+        <span :class=this.color>99</span>
     </div>
 </template>
 
@@ -36,5 +36,27 @@ span {
   height: 40px;
   width: 40px;
   background-color: #eee;
+}
+
+.green {
+  background-color: #18d315;
+}
+.red {
+  background-color: #ff4242;
+}
+.yellow {
+  background-color: #ffe44f;
+}
+.purple {
+  background-color: #895ffc;
+}
+.blue {
+  background-color: #4e4efc;
+}
+.orange {
+  background-color: #fcad2d;
+}
+.grey {
+  background-color: #e2e2e2;
 }
 </style>

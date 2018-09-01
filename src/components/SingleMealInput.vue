@@ -4,41 +4,60 @@
         <label>Title: </label>
         <input v-model="title" placeholder="New Meal">
         <label>Servings: </label>
-        <input v-model="numberOfServings" placeholder=2>
+        <input v-model="numberOfServings" placeholder="Enter a whole number">
         <br />
 
-        <select v-model="containerCountGreen">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-        <p>Green containers: {{ containerCountGreen }}</p>
+        <div class=centering>
+          <ul class="container-listing">
+            <li class="container-line">
+              <span>Green Containers:</span>
+              <containerCount count=0 color="green"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
 
-        <select v-model="containerCountRed">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-        <p>Red containers: {{ containerCountRed }}</p>
+            <li class="container-line">
+              <span>Red Containers:</span>
+              <containerCount count=0 color="red"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
 
-        <select v-model="containerCountYellow">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-        <p>Yellow containers: {{ containerCountYellow }}</p>
+            <li class="container-line">
+              <span>Yellow Containers:</span>
+              <containerCount count=0 color="yellow"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
 
-        <div class="container-line">
-          <span>Purple Containers:</span>
-          <containerCount count=0 color="purple"/>
-          <plusMinus signSymbol="-"/>
-          <plusMinus signSymbol="+"/>
+            <li class="container-line">
+              <span>Purple Containers:</span>
+              <containerCount count=0 color="purple"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
+
+            <li class="container-line">
+              <span>Blue Containers:</span>
+              <containerCount count=0 color="blue"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
+
+            <li class="container-line">
+              <span>Orange Containers:</span>
+              <containerCount count=0 color="orange"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
+
+            <li class="container-line">
+              <span>Teaspoons:</span>
+              <containerCount count=0 color="grey"/>
+              <plusMinus signSymbol="-"/>
+              <plusMinus signSymbol="+"/>
+            </li>
+          </ul>
         </div>
     </div>
 </template>
@@ -85,9 +104,20 @@ $label-primary-color: #333;
   color: $label-primary-color;
 }
 
+.container-listing {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
 .container-line {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 </style>
