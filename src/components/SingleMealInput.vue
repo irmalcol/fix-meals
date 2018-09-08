@@ -11,49 +11,49 @@
           <ul class="container-listing">
             <li class="container-line">
               <span>Green Containers:</span>
-              <containerCount :count=this.containerCountGreen color="green"/>
+              <containerCount :count=this.containerCountGreen containerType="vegetable"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Red Containers:</span>
-              <containerCount :count=this.containerCountRed color="red"/>
+              <containerCount :count=this.containerCountRed containerType="protein"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Yellow Containers:</span>
-              <containerCount :count=this.containerCountYellow color="yellow"/>
+              <containerCount :count=this.containerCountYellow containerType="carbohydrate"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Purple Containers:</span>
-              <containerCount :count=this.containerCountPurple color="purple"/>
+              <containerCount :count=this.containerCountPurple containerType="fruit"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Blue Containers:</span>
-              <containerCount :count=this.containerCountBlue color="blue"/>
+              <containerCount :count=this.containerCountBlue containerType="healthyFat"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Orange Containers:</span>
-              <containerCount :count=this.containerCountOrange color="orange"/>
+              <containerCount :count=this.containerCountOrange containerType="seedAndDressing"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>
 
             <li class="container-line">
               <span>Teaspoons:</span>
-              <containerCount :count=this.containerCountTeaspoon color="grey"/>
+              <containerCount :count=this.containerCountTeaspoon containerType="teaspoon"/>
               <plusMinus signSymbol="-"/>
               <plusMinus signSymbol="+"/>
             </li>

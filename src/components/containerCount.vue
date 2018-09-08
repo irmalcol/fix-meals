@@ -1,6 +1,6 @@
 <template>
     <div class="container-count">
-        <span :class=this.color>{{count}}</span>
+        <span :class=this.containerType>{{count}}</span>
     </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
       type: Number,
       default: 0
     },
-    color: {
+    containerType: {
       type: String,
       required: true
     }
@@ -38,25 +38,25 @@ span {
   background-color: #eee;
 }
 
-.green {
+.vegetable {
   background-color: #18d315;
 }
-.red {
+.protein {
   background-color: #ff4242;
 }
-.yellow {
+.carbohydrate {
   background-color: #ffe44f;
 }
-.purple {
+.fruit {
   background-color: #895ffc;
 }
-.blue {
+.healthyFat {
   background-color: #4e4efc;
 }
-.orange {
+.seedAndDressing {
   background-color: #fcad2d;
 }
-.grey {
+.teaspoon {
   background-color: #e2e2e2;
 }
 </style>
