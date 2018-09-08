@@ -11,51 +11,51 @@
           <ul class="container-listing">
             <li class="container-line">
               <span>Green Containers:</span>
-              <containerCount :count=this.containerCountGreen containerType="vegetable"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countVegetable containerType="vegetable"/>
+              <plusMinus signSymbol="-" v-on:update-count="countVegetable--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countVegetable++"/>
             </li>
 
             <li class="container-line">
               <span>Red Containers:</span>
-              <containerCount :count=this.containerCountRed containerType="protein"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countProtein containerType="protein"/>
+              <plusMinus signSymbol="-" v-on:update-count="countProtein--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countProtein++"/>
             </li>
 
             <li class="container-line">
               <span>Yellow Containers:</span>
-              <containerCount :count=this.containerCountYellow containerType="carbohydrate"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countCarbohydrate containerType="carbohydrate"/>
+              <plusMinus signSymbol="-" v-on:update-count="countCarbohydrate--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countCarbohydrate++"/>
             </li>
 
             <li class="container-line">
               <span>Purple Containers:</span>
-              <containerCount :count=this.containerCountPurple containerType="fruit"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countFruit containerType="fruit"/>
+              <plusMinus signSymbol="-" v-on:update-count="countFruit--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countFruit++"/>
             </li>
 
             <li class="container-line">
               <span>Blue Containers:</span>
-              <containerCount :count=this.containerCountBlue containerType="healthyFat"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countHealthyFat containerType="healthyFat"/>
+              <plusMinus signSymbol="-" v-on:update-count="countHealthyFat--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countHealthyFat++"/>
             </li>
 
             <li class="container-line">
               <span>Orange Containers:</span>
-              <containerCount :count=this.containerCountOrange containerType="seedAndDressing"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countSeedAndDressing containerType="seedAndDressing"/>
+              <plusMinus signSymbol="-" v-on:update-count="countSeedAndDressing--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countSeedAndDressing++"/>
             </li>
 
             <li class="container-line">
               <span>Teaspoons:</span>
-              <containerCount :count=this.containerCountTeaspoon containerType="teaspoon"/>
-              <plusMinus signSymbol="-"/>
-              <plusMinus signSymbol="+"/>
+              <containerCount :count=countTeaspoon containerType="teaspoon"/>
+              <plusMinus signSymbol="-" v-on:update-count="countTeaspoon--"/>
+              <plusMinus signSymbol="+" v-on:update-count="countTeaspoon++"/>
             </li>
           </ul>
         </div>
@@ -76,35 +76,18 @@ export default {
     title: {
       type: String,
       default: "New Meal"
-    },
-    containerCountGreen: {
-      type: Number,
-      default: 11
-    },
-    containerCountRed: {
-      type: Number,
-      default: 12
-    },
-    containerCountYellow: {
-      type: Number,
-      default: 13
-    },
-    containerCountPurple: {
-      type: Number,
-      default: 14
-    },
-    containerCountBlue: {
-      type: Number,
-      default: 15
-    },
-    containerCountOrange: {
-      type: Number,
-      default: 16
-    },
-    containerCountTeaspoon: {
-      type: Number,
-      default: 17
     }
+  },
+  data: function() {
+    return {
+      countVegetable: 0,
+      countProtein: 0,
+      countCarbohydrate: 0,
+      countFruit: 0,
+      countHealthyFat: 0,
+      countSeedAndDressing: 0,
+      countTeaspoon: 0
+    };
   }
 };
 </script>

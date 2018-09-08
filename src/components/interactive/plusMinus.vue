@@ -1,6 +1,6 @@
 <template>
     <div class="plus-minus">
-        <a href="#">{{signSymbol}}</a>
+        <button v-on:click="$emit('update-count')">{{signSymbol}}</button>
     </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
   text-align: center;
 }
 
-a {
+button {
   display: flex;
   justify-content: center;
   align-items: center;
