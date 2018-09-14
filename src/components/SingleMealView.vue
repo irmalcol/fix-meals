@@ -2,6 +2,7 @@
     <div class="single-meal-view">
         <h1>{{ title }}</h1>
         <span>Serves {{ numberOfServings }}</span>
+        <div data-icon="ei-pencil" data-size="m"></div>
         <ul class="container-heading">
             <li class="container-line">
                 <containerCount :count=countVegetable containerType="vegetable" elementSize="small"/>
