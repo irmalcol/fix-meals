@@ -11,42 +11,42 @@
           <ul class="container-listing">
             <li class="container-line">
               <span>Green Containers:</span>
-              <containerCount :count=countVegetable containerType="vegetable"/>
+              <containerCount :count=countVegetable containerType="vegetable" elementSize="large"/>
               <plusMinus signSymbol="-" v-on:update-count="countVegetable--"/>
               <plusMinus signSymbol="+" v-on:update-count="countVegetable++"/>
             </li>
 
             <li class="container-line">
               <span>Red Containers:</span>
-              <containerCount :count=countProtein containerType="protein"/>
+              <containerCount :count=countProtein containerType="protein" elementSize="large"/>
               <plusMinus signSymbol="-" v-on:update-count="countProtein--"/>
               <plusMinus signSymbol="+" v-on:update-count="countProtein++"/>
             </li>
 
             <li class="container-line">
               <span>Yellow Containers:</span>
-              <containerCount :count=countCarbohydrate containerType="carbohydrate"/>
+              <containerCount :count=countCarbohydrate containerType="carbohydrate" elementSize="large"/>
               <plusMinus signSymbol="-" v-on:update-count="countCarbohydrate--"/>
               <plusMinus signSymbol="+" v-on:update-count="countCarbohydrate++"/>
             </li>
 
             <li class="container-line">
               <span>Purple Containers:</span>
-              <containerCount :count=countFruit containerType="fruit"/>
+              <containerCount :count=countFruit containerType="fruit" elementSize="large"/>
               <plusMinus signSymbol="-" v-on:update-count="countFruit--"/>
               <plusMinus signSymbol="+" v-on:update-count="countFruit++"/>
             </li>
 
             <li class="container-line">
               <span>Blue Containers:</span>
-              <containerCount :count=countHealthyFat containerType="healthyFat"/>
+              <containerCount :count=countHealthyFat containerType="healthyFat" elementSize="large"/>
               <plusMinus signSymbol="-" v-on:update-count="countHealthyFat--"/>
               <plusMinus signSymbol="+" v-on:update-count="countHealthyFat++"/>
             </li>
 
             <li class="container-line">
               <span>Orange Containers:</span>
-              <containerCount :count=countSeedAndDressing containerType="seedAndDressing"/>
+              <containerCount :count=countSeedAndDressing containerType="seedAndDressing" elementSize="large"/>
               <plusMinus signSymbol="-" v-on:update-count="countSeedAndDressing--"/>
               <plusMinus signSymbol="+" v-on:update-count="countSeedAndDressing++"/>
             </li>

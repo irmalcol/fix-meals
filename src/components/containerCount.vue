@@ -1,6 +1,6 @@
 <template>
     <div class="container-count">
-        <span :class=this.containerType>{{count}}</span>
+        <span :class="[containerType, 'element-' + elementSize]">{{count}}</span>
     </div>
 </template>
 
@@ -15,6 +15,10 @@ export default {
     containerType: {
       type: String,
       required: true
+    },
+    elementSize: {
+      type: String,
+      default: "large"
     }
   }
 };
@@ -33,9 +37,17 @@ span {
   align-items: center;
   border: 2px black solid;
   border-radius: 5px;
+  background-color: #eee;
+}
+
+span.element-small {
+  height: 24px;
+  width: 24px;
+}
+
+span.element-large {
   height: 40px;
   width: 40px;
-  background-color: #eee;
 }
 
 .vegetable {
