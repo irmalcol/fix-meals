@@ -1,0 +1,62 @@
+{
+    "userProfile": {
+        "id": 0,
+        "username": "testuser",
+        "password": "testPasswordOrHashOrSomething",
+        "email": "email@example.com",
+        "recipes": {
+            "id": 0,
+            "name": "testMealName",
+            "servings": 0,
+            "containers": {
+                "vegetable": 0,
+                "protein": 0,
+                "carbohydrate": 0,
+                "carbohydrateA": 0,
+                "carbohydrateB": 0,
+                "fruit": 0,
+                "healthyFat": 0,
+                "seedAndDressing": 0,
+                "teaspoon": 0
+            },
+            "ingredients": [],
+            "instructions": []
+        },
+        "weeklySchedule": {
+            "id": 0,
+            "name": "testScheduleName",
+            "daysOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "mealtimeNames": [],
+            "weeklyTotal": {
+                "vegetable": 0,
+                "protein": 0,
+                "carbohydrate": 0,
+                "carbohydrateA": 0,
+                "carbohydrateB": 0,
+                "fruit": 0,
+                "healthyFat": 0,
+                "seedAndDressing": 0,
+                "teaspoon": 0
+            },
+            "containerTarget": {
+                "vegetable": 0,
+                "protein": 0,
+                "carbohydrate": 0,
+                "carbohydrateA": 0,
+                "carbohydrateB": 0,
+                "fruit": 0,
+                "healthyFat": 0,
+                "seedAndDressing": 0,
+                "teaspoon": 0
+            }
+        }
+    }
+}
